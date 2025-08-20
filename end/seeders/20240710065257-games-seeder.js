@@ -1,5 +1,4 @@
 'use strict';
-const fs = require('fs').promises
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
@@ -13,11 +12,11 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-    const games = JSON.parse(await fs.readFile('./data/games.json'))
+    const games = require('../data/games.json')
 
     games.forEach((el) => {
-      delete el.id
-      el.createdAt = new Date()
+      delete el.id // jaga2 kalo ada id, jangan sampe masuk
+      el.createdAt = new Date() // tambahan untuk menyeseuaikan kolom default yang dibikin sama sequelize
       el.updatedAt = new Date()
     })
 
