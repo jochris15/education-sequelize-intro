@@ -84,13 +84,14 @@ module.exports = Controller; // Export controller untuk digunakan di route
 ```
 
 ## Demo
+Pada demo kali ini , kita akan menggunakan `sequelize`, `express`, dan `pg` untuk membuat aplikasi sederhana yang menampilkan daftar game dari database.
 
 ### Setup 
 Database : game_app
 
 ```bash
 npm init -y
-npm i express pg ejs sequelize  sequelize-cli
+npm i express pg sequelize  sequelize-cli
 npm i -D nodemon
 touch .gitignore
 npx sequelize init
