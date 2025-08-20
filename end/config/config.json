@@ -2,7 +2,7 @@
   "development": {
     "username": "postgres",
     "password": "postgres",
-    "database": "esport_games",
+    "database": "game_app",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }
