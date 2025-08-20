@@ -121,6 +121,8 @@ Buat custom migration / migrasi tambahan untuk menambahkan table `genre`.
 npx sequelize migration:create --name add-column-genre
 ```
 
+**Notes**: jangan lupa edit modelnya dan menambahkan kolom `genre` pada model `Game`.
+
 ## Seeder
 
 Buatlah sebuah seed file untuk memasukan data ke tabel `Games`. Data berasal dari `games.json`.
