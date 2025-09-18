@@ -15,7 +15,7 @@ Untuk bisa menggunakan sequelize, kita perlu melakukan beberapa setup :
    ```bash
    npx sequelize-cli init
    ```
-   Command ini akan membuat beberapa folder seperti `models`, `migrations`, dan `seeders`.  
+   Command ini akan membuat beberapa folder seperti `config`, `models`, `migrations`, dan `seeders`.  
 
 3. Setelah itu kita perlu lakukan konfigurasi database pada file `config/config.json`. Contoh konfigurasi development untuk Postgres:
    ```json
@@ -116,7 +116,7 @@ npx sequelize db:migrate
 
 ## Custom Migration
 
-Buat custom migration / migrasi tambahan untuk menambahkan table `genre`.
+Buat custom migration / migrasi tambahan untuk menambahkan kolom `genre`.
 ```
 npx sequelize migration:create --name add-column-genre
 ```
