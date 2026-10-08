@@ -92,7 +92,6 @@ Database : game_app
 ```bash
 npm init -y
 npm i express pg sequelize  sequelize-cli
-npm i -D nodemon
 touch .gitignore
 npx sequelize init
 npx sequelize db:create
